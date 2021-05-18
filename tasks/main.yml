@@ -3,8 +3,7 @@
 - name: "update, upgrade, autoremove Ubuntu | update packages"
   become: yes
   apt:
-    name: '*'
-    state: latest
+    update_cache: yes
 
 - name: "update, upgrade, autoremove Ubuntu | upgrade packages"
   become: yes
